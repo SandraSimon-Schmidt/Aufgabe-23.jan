@@ -1,10 +1,12 @@
 header {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   background-image: url(https://cdn.pixabay.com/photo/2020/04/08/19/04/tennis-5018589_1280.jpg);
   background-size: cover;
   height: 100vh;
 }
+
 nav {
   position: absolute;
   top: 0;
@@ -12,44 +14,70 @@ nav {
   border: none;
   background-color: blue;
   padding: 20px;
+  z-index: +1;
 }
 .nav1 {
   color: azure;
   font-size: xx-large;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 0, 140);
+}
 
-.button1 {
+.Form1 {
+  display: flex;
+  gap: -5px;
   height: 5%;
-  color: blueviolet;
+  width: auto;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 100px;
-  background-color: white;
-  border: none;
-  border-radius: 20%;
-  font-size: x-large;
 }
-.button2 {
-  height: 5%;
-  color: blueviolet;
-  position: absolute;
-  top: 30;
-  left: 100px;
-  background-color: white;
-  border: none;
-  border-radius: 20%;
-  font-size: x-large;
-}
-.button3 {
-  color: blueviolet;
-  position: absolute;
-  bottom: 0;
-  left: 100px;
-  background-color: white;
-  border: none;
-  border-radius: 20%;
-  font-size: x-large;
-}
+
+.Form2 {
+    display: flex;
+    gap: -5px;
+    height: 5%;
+    width: auto;
+    position: absolute;
+    top: 20%;
+    left: 100px;
+  }
+
+.Form3 {
+    display: flex;
+    gap:-5px;
+    height: 5%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+  }
+
+  .button {
+    color: blueviolet;
+    background-color: white;
+    border: none;
+    border-radius: 20%;
+    font-size: x-large;
+    z-index: +1;
+  }
+  
+  .vorderball {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -5px;
+  }
+  
+
 
 .Text1 {
   color: rgb(166, 235, 187);
@@ -68,16 +96,16 @@ nav {
   left: 100px;
   background-color: none;
   border: none;
-width: 300px;
+  width: 300px;
   font-size: larger;
 }
 
 .rechtesfeld {
-    position: absolute;
-    bottom: 30%;
-    right: 200px;
-border: 2px solid black;
-background-color: none;
-height: 300px;
-width: 200px;
+  position: absolute;
+  bottom: 30%;
+  right: 200px;
+  border: 2px solid black;
+  background-color: none;
+  height: 300px;
+  width: 200px;
 }
